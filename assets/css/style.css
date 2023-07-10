@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 #header h1 {
   font-size: 48px;
   margin: 0;
-  padding: 0;
+  padding:0;
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -104,6 +104,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+}
+#header .portfolio-link{
+  display: none;
 }
 #header .social-links a:hover {
   background: #18d26e;
@@ -156,6 +159,35 @@ h1, h2, h3, h4, h5, h6 {
   #header.header-top h1 {
     font-size: 26px;
   }
+  #header .portfolio-link{
+    margin-top: 15px;
+    background-color: #18d26e; /* Green */
+    border: none;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #header .portfolio-link a{
+    color: #fff;
+  }
+
+  @media only screen and (min-width: 720px) {
+    #header{
+      padding-top: 30px;
+      align-items: flex-start;
+    }
+    #header h1{
+      padding-bottom: 100%;
+      position: relative;
+      right: 15%;
+
+  }
+
+  }
+    
 }
 
 /*--------------------------------------------------------------
